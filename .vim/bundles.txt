@@ -1,0 +1,5 @@
+copypath.vim
+ctrlp.vim
+nerdcommenter
+nerdtree
+vim-closetag
