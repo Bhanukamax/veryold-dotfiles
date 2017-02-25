@@ -36,8 +36,12 @@ nnoremap - <s-o><Esc>
 nnoremap <space> viw
 
 " save from insert mode
-inoremap jjj <esc>:w!<CR>A
-
+" inoremap jjj <esc>:w!<CR>A
+" inoremap jjk <esc>:wq!<CR>
+" inoremap kkk <esc>:q!<CR>
+nnoremap <leader>kkk :q!<CR>
+nnoremap <leader>jjj :w!<CR>
+nnoremap <leader>jjk :wq!<CR>
 
 " case conversion in normal mode
 nnoremap <c-u> viwU
@@ -94,6 +98,8 @@ inoremap jk <esc>
 " return to normal mode from visual
 vnoremap <leader>jk <esc>
 
+" space in normal mode
+nnoremap <leader><space> i<space><esc>
 
 	" load bundles
 execute pathogen#infect()
