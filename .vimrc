@@ -17,6 +17,10 @@ noremap <leader>d <s-v>y<s-p>
 " VIMRC edding test
 nnoremap <leader>vs :source $MYVIMRC<CR>
 nnoremap <leader>ve :vsplit $MYVIMRC<CR>
+
+" edit .bash_profile
+nnoremap <leader>be :e ~/.bash_profile<CR>
+
 nnoremap <leader>wq :wq!<CR>
 nnoremap <leader>qa	:quitall!<CR>
 nnoremap <leader>w :w!<CR>
@@ -50,6 +54,11 @@ noremap <leader>m :NERDTreeFind<CR>
 
 noremap <Leader>A  oanother line<Esc>
 
+
+" view commands
+nnoremap <leader>o :only<CR>
+	" change window
+	nnoremap <tab> <c-w>w
 
 " super H and L
 nnoremap H 0
