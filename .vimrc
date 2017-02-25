@@ -17,8 +17,8 @@ noremap <leader>d <s-v>y<s-p>
 " VIMRC edding test
 nnoremap <leader>vs :source $MYVIMRC<CR>
 nnoremap <leader>ve :vsplit $MYVIMRC<CR>
-nnoremap zz :wq!<CR>
-nnoremap zq	:quitall!<CR>
+nnoremap <leader>wq :wq!<CR>
+nnoremap <leader>qa	:quitall!<CR>
 nnoremap <leader>w :w!<CR>
 nnoremap <leader>q :q!<CR>
 
