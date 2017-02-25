@@ -1,0 +1,13 @@
+#!/bin/bash
+# pwd=$(pwd)
+te='wow'
+tee='wow'
+echo $te
+
+if [ "$te" ==  "$tee" ]
+then
+	echo 'te equals tee'
+else
+	echo 'te does not equal tee'
+fi
+
