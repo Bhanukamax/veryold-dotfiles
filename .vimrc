@@ -14,7 +14,7 @@ noremap <C-t> :tabe<CR>
 " duplicate line
 noremap <leader>d <s-v>y<s-p>
 
-" VIMRC edding
+" VIMRC edding test
 nnoremap <leader>vs :source $MYVIMRC<CR>
 nnoremap <leader>ve :vsplit $MYVIMRC<CR>
 nnoremap zz :wq!<CR>
