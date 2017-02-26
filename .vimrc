@@ -142,6 +142,7 @@ nnoremap <leader>/ :echo 'wowz'<CR>
 
 " change window
 nnoremap <tab> <c-w>w
+nnoremap <s-tab> I<tab><esc>
 
 " super H and L
 nnoremap H 0
@@ -168,3 +169,4 @@ nnoremap <F11> :vertical res -2<CR>
 
 
 nnoremap U :red<cr>
+nnoremap <leader>qq :qa!<cr>
