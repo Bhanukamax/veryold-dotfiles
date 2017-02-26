@@ -30,7 +30,8 @@ nnoremap <leader>w :w!<CR>
 nnoremap <leader>q :q!<CR>
 
 nnoremap <leader>q :q!<CR>
-noremap <F2> :tabn<CR>
+noremap <F2> :tabp<CR>
+noremap <F3> :tabn<CR>
 
 nnoremap - <s-o><Esc> 
 nnoremap <space> viw
@@ -103,5 +104,11 @@ nnoremap <leader><space> i<space><esc>
 
 	" load bundles
 execute pathogen#infect()
+
+" resize splits
+nnoremap <s-F12> :res +2<CR>
+nnoremap <s-F11> :res -2<CR>
+nnoremap <F12> :vertical res +2<CR>
+nnoremap <F11> :vertical res -2<CR>
 
 
