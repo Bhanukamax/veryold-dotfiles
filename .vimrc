@@ -180,3 +180,4 @@ nnoremap <leader>/	I<!--<esc>A--><esc>
 
 " autoclosing file types
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml, *.php"
+let g:ctrlp_custom_ignore = 'node_modules'
