@@ -32,7 +32,8 @@ Plugin 'alvan/vim-closetag'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/copypath.vim'
 Plugin 'scrooloose/nerdcommenter'
-
+Plugin 'gregsexton/MatchTag'
+Plugin 'vim-scripts/loremipsum'
 
 
 " All of your Plugins must be added before the following line
@@ -49,6 +50,8 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+
 
 
 
@@ -170,3 +173,7 @@ nnoremap <F11> :vertical res -2<CR>
 
 nnoremap U :red<cr>
 nnoremap <leader>qq :qa!<cr>
+
+
+" inserting html comment tag
+nnoremap <leader>/	I<!--<esc>A--><esc> 
