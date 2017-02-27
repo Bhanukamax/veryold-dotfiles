@@ -177,3 +177,6 @@ nnoremap <leader>qq :qa!<cr>
 
 " inserting html comment tag
 nnoremap <leader>/	I<!--<esc>A--><esc> 
+
+" autoclosing file types
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml, *.php"
