@@ -34,7 +34,7 @@ Plugin 'vim-scripts/copypath.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'gregsexton/MatchTag'
 Plugin 'vim-scripts/loremipsum'
-
+Plugin 'tmhedberg/matchit'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -181,3 +181,6 @@ nnoremap <leader>/	I<!--<esc>A--><esc>
 " autoclosing file types
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml, *.php"
 let g:ctrlp_custom_ignore = 'node_modules'
+
+
+nnoremap <leader>tw :set wrap!<CR>
