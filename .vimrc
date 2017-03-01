@@ -29,7 +29,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'alvan/vim-closetag'
-Plugin 'kien/ctrlp.vim'
+" Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/copypath.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'gregsexton/MatchTag'
@@ -53,6 +53,11 @@ filetype plugin indent on    " required
 
 
 
+set nocompatible
+syntax on
+filetype plugin on
+set path+=**
+set foldcolumn=4
 
 
 
@@ -184,3 +189,9 @@ let g:ctrlp_custom_ignore = 'node_modules'
 
 
 nnoremap <leader>tw :set wrap!<CR>
+
+" select all html between tags (inclusive)
+" nnoremap <leader>a %
+
+set wildmenu
+set wildmode="list:full"
