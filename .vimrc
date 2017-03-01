@@ -29,7 +29,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'alvan/vim-closetag'
-" Plugin 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/copypath.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'gregsexton/MatchTag'
@@ -56,8 +56,9 @@ filetype plugin indent on    " required
 set nocompatible
 syntax on
 filetype plugin on
+runtime macros/matchit.vim
 set path+=**
-set foldcolumn=4
+"set foldcolumn=4
 
 
 
@@ -195,3 +196,7 @@ nnoremap <leader>tw :set wrap!<CR>
 
 set wildmenu
 set wildmode="list:full"
+
+set scrolloff=13
+nnoremap <leader>h <s-v><s-5>
+vnoremap <leader>h <s-5>
