@@ -195,8 +195,28 @@ nnoremap <leader>tw :set wrap!<CR>
 " nnoremap <leader>a %
 
 set wildmenu
-set wildmode="list:full"
+set wildmode=list:full
 
 set scrolloff=13
-nnoremap <leader>h <s-v><s-5>
-vnoremap <leader>h <s-5>
+"nnoremap <leader>h <s-v><s-5>
+"vnoremap <leader>h <s-5>
+
+
+
+function! ToggleFoldCol()
+	let fold=&foldcolumn
+	if	fold<4
+		:set foldcolumn=4 
+	else
+		:set foldcolumn&
+	endif
+endfunction
+
+nnoremap <leader>fo :call ToggleFoldCol()<cr>
+
+" got to previus file
+nnoremap <leader>fb :e#<cr>
+set smartindent
+" reindet file
+nnoremap <leader>fr :normal gg=G<cr>
+set ignorecase
