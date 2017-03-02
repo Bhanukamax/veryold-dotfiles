@@ -220,3 +220,8 @@ set smartindent
 " reindet file
 nnoremap <leader>fr :normal gg=G<cr>
 set ignorecase
+
+
+" select within tags
+nnoremap <leader>sa :normal V%<cr>
+
