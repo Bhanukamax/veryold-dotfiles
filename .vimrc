@@ -118,7 +118,7 @@ nnoremap dd O<esc>jddk
 nnoremap \ dd
 nnoremap <c-\> kdd
 
-inoremap <c-d> <Esc>ddi
+" inoremap <c-d> <Esc>ddi
 
 
 " CAS and DOGS TRY TO type
@@ -147,7 +147,6 @@ nnoremap <leader>o :only<CR>
 
 " commenttin
 inoremap <c-/> :vsp<CR>
-nnoremap <leader>/ :echo 'wowz'<CR>
 
 " change window
 nnoremap <tab> <c-w>w
