@@ -35,6 +35,8 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'gregsexton/MatchTag'
 Plugin 'vim-scripts/loremipsum'
 Plugin 'tmhedberg/matchit'
+Plugin 'carakan/new-railscasts-theme'
+Plugin 'guns/xterm-color-table.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -233,3 +235,6 @@ nnoremap <leader>p Vp
 
 " yank inside next double qoat
 onoremap i" :<c-u>normal! f"vi"<cr>
+
+colorscheme ron
+:hi TabLineSel ctermbg=LightBlue ctermfg=LightYellow
