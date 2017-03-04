@@ -88,12 +88,12 @@ nnoremap <leader>be :e ~/.bash_profile<CR>
 
 
 " saving and closing
-nnoremap <leader>wq :wq!<CR>
-nnoremap <leader>qa	:quitall!<CR>
-nnoremap <leader>w :w!<CR>
-nnoremap <leader>q :q!<CR>
+"nnoremap <leader>wq :wq!<CR>
+"nnoremap <leader>qa	:quitall!<CR>
+"nnoremap <leader>w :w!<CR>
+"nnoremap <leader>q :q!<CR>
 
-nnoremap <leader>q :q!<CR>
+"nnoremap <leader>q :q!<CR>
 noremap <F2> :tabp<CR>
 noremap <F3> :tabn<CR>
 
@@ -106,7 +106,7 @@ nnoremap <space> viw
 " inoremap kkk <esc>:q!<CR>
 nnoremap <leader>kkk :q!<CR>
 nnoremap <leader>jjj :w!<CR>
-nnoremap <leader>jjk :wq!<CR>
+"nnoremap <leader>jjk :wq!<CR>
 
 " case conversion in normal mode
 nnoremap <c-u> viwU
@@ -177,7 +177,7 @@ nnoremap <F11> :vertical res -2<CR>
 
 
 nnoremap U :red<cr>
-nnoremap <leader>qq :qa!<cr>
+"nnoremap <leader>qq :qa<cr>
 
 
 " inserting html comment tag
@@ -222,5 +222,14 @@ set ignorecase
 
 
 " select within tags
-nnoremap <leader>sa :normal V%<cr>
+nnoremap <leader>sa :normal elV%<cr>
+nnoremap <c-a> :normal V%<cr>
 
+
+" yank the current line
+nnoremap <leader>y Vye
+" replace the line
+nnoremap <leader>p Vp
+
+" yank inside next double qoat
+onoremap i" :<c-u>normal! f"vi"<cr>
