@@ -29,7 +29,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'alvan/vim-closetag'
-Plugin 'kien/ctrlp.vim'
+"Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/copypath.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'gregsexton/MatchTag'
@@ -37,6 +37,12 @@ Plugin 'vim-scripts/loremipsum'
 Plugin 'tmhedberg/matchit'
 Plugin 'carakan/new-railscasts-theme'
 Plugin 'guns/xterm-color-table.vim'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+Plugin 'mattn/emmet-vim'
+
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -61,7 +67,7 @@ filetype plugin on
 runtime macros/matchit.vim
 set path+=**
 "set foldcolumn=4
-
+set hlsearch
 
 
 " basic settings
@@ -186,8 +192,8 @@ nnoremap U :red<cr>
 nnoremap <leader>/	I<!--<esc>A--><esc> 
 
 " autoclosing file types
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml, *.php"
-let g:ctrlp_custom_ignore = 'node_modules'
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php"
+"let g:ctrlp_custom_ignore = 'node_modules'
 
 
 nnoremap <leader>tw :set wrap!<CR>
@@ -234,7 +240,13 @@ nnoremap <leader>y Vye
 nnoremap <leader>p Vp
 
 " yank inside next double qoat
-onoremap i" :<c-u>normal! f"vi"<cr>
+"onoremap i" :<c-u>normal! f"vi"<cr>
 
 colorscheme ron
 :hi TabLineSel ctermbg=LightBlue ctermfg=LightYellow
+
+
+
+"plugins to check
+"rainbow paranthesis
+"fugitive  vim
