@@ -41,8 +41,9 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mattn/emmet-vim'
-
-
+"Plugin 'kien/rainbow_parentheses.vimkien'
+"Plugin 'severin-lemaignan/vim-minimap'
+Plugin 'koron/minimap-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
