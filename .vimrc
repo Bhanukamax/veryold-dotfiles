@@ -44,6 +44,9 @@ Plugin 'mattn/emmet-vim'
 "Plugin 'kien/rainbow_parentheses.vimkien'
 "Plugin 'severin-lemaignan/vim-minimap'
 Plugin 'koron/minimap-vim'
+Plugin 'luochen1990/rainbow'
+Plugin '2072/PHP-Indenting-for-VIm'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -143,7 +146,7 @@ nnoremap <leader>cf :CopyFileName<CR>
 
 
 " past in insert mode
-inoremap <c-p> <esc>pi
+inoremap <c-p> <esc>pa
 
 noremap <Leader>A  oanother line<Esc>
 
@@ -247,6 +250,7 @@ colorscheme ron
 :hi TabLineSel ctermbg=LightBlue ctermfg=LightYellow
 
 
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
 "plugins to check
 "rainbow paranthesis
