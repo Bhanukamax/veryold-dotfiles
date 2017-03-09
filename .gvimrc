@@ -4,6 +4,7 @@ nnoremap <leader>gs :source $MYGVIMRC<cr>
 color desert
 set vb t_vb=
 set backspace=2
+set autoindent
 "set guioptions-=m
 "set guioptions-=T
 
