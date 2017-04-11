@@ -5,7 +5,6 @@ color desert
 color new-railscasts
 "source ~\.vim\autoload\macvim-light.vim
 colorscheme macvim-light
-
 set vb t_vb=
 set backspace=2
 "set guioptions-=m
