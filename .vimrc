@@ -246,7 +246,7 @@ nnoremap <leader>p Vp
 " yank inside next double qoat
 "onoremap i" :<c-u>normal! f"vi"<cr>
 
-colorscheme ron
+" colorscheme ron
 :hi TabLineSel ctermbg=LightBlue ctermfg=LightYellow
 
 
