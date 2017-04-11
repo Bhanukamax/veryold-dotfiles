@@ -29,7 +29,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'alvan/vim-closetag'
-"Plugin 'kien/ctrlp.vim'
+" Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/copypath.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'gregsexton/MatchTag'
@@ -41,6 +41,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mattn/emmet-vim'
+Plugin 'nightsense/seabird'
 "Plugin 'kien/rainbow_parentheses.vimkien'
 "Plugin 'severin-lemaignan/vim-minimap'
 Plugin 'koron/minimap-vim'
@@ -256,3 +257,4 @@ let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 "rainbow paranthesis
 "fugitive  vim
 set autoindent
+nnoremap <leader>rn :set relativenumber!<cr>
