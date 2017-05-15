@@ -117,7 +117,7 @@ nnoremap <space> viw
 " inoremap jjj <esc>:w!<CR>A
 " inoremap jjk <esc>:wq!<CR>
 " inoremap kkk <esc>:q!<CR>
-nnoremap <leader>kkk :q!<CR>
+" nnoremap <leader>kkk :q!<CR>
 nnoremap <leader>jjj :w!<CR>
 "nnoremap <leader>jjk :wq!<CR>
 
