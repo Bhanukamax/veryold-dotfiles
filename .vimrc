@@ -67,7 +67,7 @@ filetype plugin indent on    " required
 
 
 
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|storage\|vendor'
 set nocompatible
 syntax on
 filetype plugin on
