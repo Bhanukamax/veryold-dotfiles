@@ -47,6 +47,7 @@ Plugin 'nightsense/seabird'
 Plugin 'koron/minimap-vim'
 Plugin 'luochen1990/rainbow'
 Plugin '2072/PHP-Indenting-for-VIm'
+Plugin 'leafgarland/typescript-vim'
 
 
 " All of your Plugins must be added before the following line
@@ -202,6 +203,13 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php"
 
 
 nnoremap <leader>tw :set wrap!<CR>
+
+
+" set file type html
+nnoremap <leader>fth :set ft=html<CR> :set ai<CR>
+nnoremap <leader>ftp :set ft=php<CR> :set ai<CR>
+nnoremap <leader>ai :set ai<CR>
+nnoremap <leader>fn :echo @%<CR>
 
 " select all html between tags (inclusive)
 " nnoremap <leader>a %
