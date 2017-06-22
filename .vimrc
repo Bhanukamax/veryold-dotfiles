@@ -29,7 +29,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'alvan/vim-closetag'
-" Plugin 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/copypath.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'gregsexton/MatchTag'
@@ -47,6 +47,8 @@ Plugin 'nightsense/seabird'
 Plugin 'koron/minimap-vim'
 Plugin 'luochen1990/rainbow'
 Plugin '2072/PHP-Indenting-for-VIm'
+"Plugin 'leafgarland/typescript-vim'
+Plugin 'HerringtonDarkholme/yats.vim'
 
 
 " All of your Plugins must be added before the following line
@@ -66,6 +68,7 @@ filetype plugin indent on    " required
 
 
 
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 set nocompatible
 syntax on
 filetype plugin on
@@ -202,6 +205,7 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php"
 
 
 nnoremap <leader>tw :set wrap!<CR>
+nnoremap <leader>ftts :set ft=typescript<CR>
 
 " select all html between tags (inclusive)
 " nnoremap <leader>a %
@@ -247,7 +251,7 @@ nnoremap <leader>p Vp
 " yank inside next double qoat
 "onoremap i" :<c-u>normal! f"vi"<cr>
 
-colorscheme ron
+" colorscheme ron
 :hi TabLineSel ctermbg=LightBlue ctermfg=LightYellow
 
 
