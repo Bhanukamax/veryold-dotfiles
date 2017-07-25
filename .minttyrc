@@ -1,3 +1,4 @@
 BoldAsFont=no
 Font=Lucida Console
-BackgroundColour=16,14,27
+BackgroundColour=240,240,240
+ForegroundColour=98,98,98

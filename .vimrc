@@ -84,8 +84,8 @@ let mapleader = ","
 " force jk for <Esc>
 inoremap <Esc> <nop>
 set number
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set nowrap
 set autoindent
 
@@ -253,6 +253,7 @@ nnoremap <c-a> :normal V%<cr>
 nnoremap <leader>y Vye
 " replace the line
 nnoremap <leader>p Vp
+nnoremap <leader>mr :RainbowToggle<cr> :RainbowToggle<cr>
 
 " yank inside next double qoat
 "onoremap i" :<c-u>normal! f"vi"<cr>
