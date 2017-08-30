@@ -26,8 +26,8 @@ Plugin 'VundleVim/Vundle.vim'
 " " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
-
 Plugin 'scrooloose/nerdtree'
+Plugin 'pangloss/vim-javascript'
 Plugin 'alvan/vim-closetag'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/copypath.vim'
@@ -48,6 +48,7 @@ Plugin 'koron/minimap-vim'
 Plugin 'luochen1990/rainbow'
 Plugin '2072/PHP-Indenting-for-VIm'
 Plugin 'HerringtonDarkholme/yats.vim'
+Plugin 'chrisbra/Colorizer'
 
 
 " All of your Plugins must be added before the following line
@@ -66,6 +67,10 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 
+
+"" unmap f1 help key
+:nmap <F1> :echo<CR>
+:imap <F1> <C-o>:echo<CR>
 
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|storage\|vendor'
 set nocompatible
@@ -97,6 +102,7 @@ noremap <leader>d <s-v>y<s-p>
 " VIMRC edding test
 nnoremap <leader>vs :source $MYVIMRC<CR>
 nnoremap <leader>ve :vsplit $MYVIMRC<CR>
+nnoremap <leader>vm :%s///g<CR>
 
 " edit .bash_profile
 nnoremap <leader>be :e ~/.bash_profile<CR>
@@ -219,7 +225,7 @@ nnoremap <leader>fn :echo @%<CR>
 set wildmenu
 set wildmode=list:full
 
-set scrolloff=13
+"set scrolloff=13
 "nnoremap <leader>h <s-v><s-5>
 "vnoremap <leader>h <s-5>
 
