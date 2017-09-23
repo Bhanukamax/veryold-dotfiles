@@ -49,6 +49,8 @@ Plugin 'luochen1990/rainbow'
 Plugin '2072/PHP-Indenting-for-VIm'
 Plugin 'HerringtonDarkholme/yats.vim'
 Plugin 'chrisbra/Colorizer'
+Plugin 'digitaltoad/vim-pug'
+Plugin 'othree/csscomplete.vim'
 
 
 " All of your Plugins must be added before the following line
@@ -89,8 +91,8 @@ let mapleader = ","
 " force jk for <Esc>
 inoremap <Esc> <nop>
 set number
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set nowrap
 set autoindent
 
